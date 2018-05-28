@@ -1,0 +1,6 @@
+directories:
+  output: dist
+  buildResources: build
+files: '!build_assets${/*}'
+appId: com.Ernest.electron
+electronVersion: 2.0.2

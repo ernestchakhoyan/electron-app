@@ -1,0 +1,26 @@
+{
+  "name": "electron",
+  "productName": "Electron App",
+  "author": "Ernest Chakhoyan",
+  "description": "Electron App",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "global": "^4.3.2"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-builder": "^20.15.1",
+    "electron-icon-maker": "^0.0.4"
+  },
+  "build": {
+    "files": "!build_assets${/*}",
+    "appId": "com.Ernest.electron"
+  }
+}
